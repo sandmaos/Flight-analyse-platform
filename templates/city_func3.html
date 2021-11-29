@@ -1,0 +1,32 @@
+{% extends 'city_base.html' %}
+
+{% block content %}
+<title>热门城市排行</title>
+<h1 class="text-center">热门城市排行</h1>
+<style>
+    .t_title {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 2.5em;
+        line-height: 80px;
+        color: #fff;
+    }
+
+    #chart_map {
+        cursor: pointer;
+    }
+
+    .t_show {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 2px;
+        background: #2C58A6;
+        padding: 2px 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+</style>
+<div id="chart_city3" class="main_table t_btn8" style="width:100%; height: 500px"></div>
+{% endblock %}

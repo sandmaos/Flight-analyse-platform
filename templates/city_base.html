@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="height: 100%; width: 100%;">
+<head>
+    <meta charset="utf-8"> 
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">城市模块</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/city_func1">城市吞吐量</a></li>
+                <li><a href="/city_func2">吞吐量变化</a></li>
+                <li><a href="/city_func3">热门城市排行</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li> <a class="navbar-brand" href="/airline_func1">航线模块</a> </li>
+                <li> <a class="navbar-brand" href="/company_func1">航空公司模块</a> </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="col-md-2"></div>
+    <div class="col-md-8">{% block content %} {% endblock %}</div>
+    <div class="col-md-2"></div>
+    <script src="/static/js/jquery-2.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/common.js"></script>
+
+    <script src="/static/js/echarts.min.js"></script>
+    <script src="/static/js/dataTool.js"></script>
+    <script src="/static/js/china.js"></script>
+    <script src="/static/js/tagcanvas.min.js"></script>
+    <script src="/static/js/area.js"></script>
+    <script src="/static/main/city_func1.js"></script>
+    <script src="/static/main/city_func2.js"></script>
+    <script src="/static/main/city_func3.js"></script>
+
+    
+</body>
